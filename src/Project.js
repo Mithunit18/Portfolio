@@ -1,4 +1,4 @@
-import { FaClipboardList, FaBlog, FaCalculator, FaUniversity, FaCircle } from "react-icons/fa";
+import { FaClipboardList, FaBlog, FaCalculator, FaUniversity, FaCircle, FaComments } from "react-icons/fa";
 
 const Project = () => {
 
@@ -32,7 +32,13 @@ const Project = () => {
       description: "A secure login and registration form with validation using React.",
       icon: <FaCircle style={{ color: "#795548" }} />,
       link: "https://github.com/Mithunit18/Registration_form",
-    }
+    },
+    {
+      name: "Realtime Chat App",
+      description: "A chat application with real-time messaging using WebSockets.",
+      icon: <FaComments style={{ color: "#673AB7" }} aria-label="Chat App Icon" /> ,
+      link:"https://github.com/Mithunit18/Chat-App",
+    },
   ];
 
   return (

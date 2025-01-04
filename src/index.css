@@ -129,14 +129,15 @@ main .typed-text {
 
 /* Skills Section */
 .skills-section {
-  padding: 20px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
   text-align: center;
 }
 
 .skills-heading {
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: #333;
 }
 
@@ -144,8 +145,8 @@ main .typed-text {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted for larger cards */
+  gap: 25px; /* Increased gap between cards */
   justify-items: center;
 }
 
@@ -156,57 +157,97 @@ main .typed-text {
   text-align: center;
   position: relative;
   background-color: #fff;
-  padding: 20px 10px 10px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  width: 120px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 150px; /* Slightly larger cards */
+  height: 180px; /* Ensure consistent card height */
+}
+
+.skill:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  background-color: #f0f0f0; /* Light background change */
 }
 
 .skill-icon {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3rem; /* Larger icons */
+  margin-bottom: 15px;
 }
 
 .skill p {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 1.2rem; /* Slightly larger text */
   font-weight: bold;
   color: #333;
 }
 
 /* Adding colors to the icons */
-.html {
+.skill-icon-html {
   color: #E34F26; /* HTML */
 }
 
-.css {
+.skill-icon-css {
   color: #264de4; /* CSS */
 }
 
-.js {
+.skill-icon-js {
   color: #f7df1e; /* JavaScript */
 }
 
-.react {
+.skill-icon-react {
   color: #61dafb; /* React */
 }
 
-.python {
+.skill-icon-python {
   color: #306998; /* Python */
 }
 
-.java {
+.skill-icon-java {
   color: #007396; /* Java */
 }
 
-.cpp {
+.skill-icon-cpp {
   color: #00599c; /* C++ */
+}
+
+.skill-icon-node {
+  color: #43853d; /* Node.js */
+}
+
+.skill-icon-express {
+  color: #000; /* Express (monochrome) */
+}
+
+/* Responsive Design for Skills Section */
+@media (max-width: 768px) {
+  .skill {
+    width: 130px; /* Smaller cards on mobile */
+    height: 160px;
+  }
+
+  .skill-icon {
+    font-size: 2.5rem; /* Adjust icon size */
+  }
+
+  .skill p {
+    font-size: 1rem; /* Adjust text size */
+  }
+}
+
+/* Force 5 columns on desktop */
+@media (min-width: 1024px) {
+  .skill-set {
+    grid-template-columns: repeat(5, 1fr); /* Exactly 5 columns */
+  }
 }
 
 /* Project Section */
 .project-list {
   padding: 20px;
   text-align: center;
+  text-decoration: none;
 }
 
 .project-list h2 {
@@ -239,6 +280,7 @@ main .typed-text {
   transform: translateY(-5px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   background-color: #f0f0f0; /* Smooth background on hover */
+  text-decoration: none;
 }
 
 .project-item .project-icon {
@@ -270,6 +312,7 @@ main .typed-text {
   padding: 10px;
   border-radius: 8px; /* Rounded corners */
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .project-footer a:hover {

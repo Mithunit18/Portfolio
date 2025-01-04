@@ -25,7 +25,7 @@ const Main = () => {
       <img
         src={my_main}
         alt="Mithun_M"
-        style={{ width: "300px", height: "300px", borderRadius: "50%", objectFit: "cover" }}
+        style={{ width: "300px", height: "300px", borderRadius: "50%", objectFit: "cover", border: "3px solid cyan" }}
       />
       <div>
         <h3>Hello, It's me</h3>
