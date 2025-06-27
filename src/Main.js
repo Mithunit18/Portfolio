@@ -36,7 +36,7 @@ const Main = () => {
       {/* Resume Download Button */}
     </main>
           <div className="text-center pt-16" data-aos="fade-up">
-        <a href="/MITHUN_updated_resume" download>
+        <a href="/MITHUN_updated_resume.pdf" download>
           <button className='px-8 py-4 bg-gray-600 rounded-2xl hover:bg-cyan-500 hover:text-black transition-all duration-500 font-medium' >Download My Resume</button>
         </a>
       </div>
