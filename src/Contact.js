@@ -10,15 +10,15 @@ const Contact = () => {
       <form className="">
         <div className="p-4 flex flex-col">
           <label className="text-gray-300 font-medium mb-2">Name:</label>
-          <input type="text" id="name" name="name" placeholder="Your name" className="focus:outline-none border focus:ring-2 focus:ring-cyan-500 rounded-md px-4 py-2" required />
+          <input type="text" id="name" name="name" placeholder="Your name" className="focus:outline-none border text-black focus:ring-2 focus:ring-cyan-500 rounded-md px-4 py-2" required />
         </div>
         <div className="p-4 flex flex-col">
           <label className="text-gray-300 font-medium mb-2">Email:</label>
-          <input type="email" id="email" name="email" placeholder="Your Email" className="focus:outline-none border focus:ring-2 focus:ring-cyan-500 rounded-md px-4 py-2" required />
+          <input type="email" id="email" name="email" placeholder="Your Email" className="focus:outline-none border text-black focus:ring-2 focus:ring-cyan-500 rounded-md px-4 py-2" required />
         </div>
         <div className="p-4 flex flex-col">
           <label className="text-gray-300 font-medium mb-2">Message:</label>
-          <textarea id="message" name="message" rows="3" placeholder="Your Message" className="focus:outline-none border focus:ring-2 focus:ring-cyan-500 rounded-md px-4 py-2" required></textarea>
+          <textarea id="message" name="message" rows="3" placeholder="Your Message" className="focus:outline-none border text-black focus:ring-2 focus:ring-cyan-500 rounded-md px-4 py-2" required></textarea>
         </div>
         <button type="submit" className="px-4 py-2 ml-4 bg-gray-600 text-gray-300 font-normal rounded-2xl hover:text-black hover:bg-cyan-500 transition-all duration-500">Send Message</button>
       </form>
