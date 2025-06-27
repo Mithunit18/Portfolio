@@ -19,7 +19,7 @@ const Main = () => {
 
   return (
     <>
-    <main className='flex flex-col sm:flex-row items-center justify-between mt-4 text-gray-300 space-y-4 pt-32 max-w-7xl ml-8'>
+    <main className='flex flex-col sm:flex-row items-center justify-between mt-4 text-gray-300 space-y-4 pt-32 max-w-7xl mx-auto lg:ml-8'>
       <img
         src={my_main}
         alt="Mithun_M"
