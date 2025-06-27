@@ -1,16 +1,13 @@
 import { useEffect } from 'react';
 import my_main from './my_main.jpg';
 import Typed from 'typed.js';
-import About from './About';
-import Skills from './Skills';
-import Project from './Project';
-import Contact from './Contact';
+
 
 const Main = () => {
 
   useEffect(() => {
     var typed = new Typed(".typed-text", {
-      strings: ["Frontend Developer", "Full Stack Developer", "Cricketer"],
+      strings: ["Frontend Developer", "FullStack Developer", "Cricketer"],
       typeSpeed: 100,
       backSpeed: 100,
       loop: true
@@ -21,43 +18,31 @@ const Main = () => {
   }, []);
 
   return (
-    <main>
+    <>
+    <main className='flex flex-col sm:flex-row items-center justify-between mt-4 text-gray-300 space-y-4 pt-32 max-w-7xl ml-8'>
       <img
         src={my_main}
         alt="Mithun_M"
-        style={{ width: "300px", height: "300px", borderRadius: "50%", objectFit: "cover", border: "3px solid cyan" }}
+        style={{  borderRadius: "50%", objectFit: "cover", border: "3px solid cyan" }}
+        data-aos="zoom-in"
+        className='ml-0 lg:ml-32 w-[300px] h-[300px] lg:w-[500px] lg:h-[500px]'
       />
-      <div>
-        <h3>Hello, It's me</h3>
-        <h1>Mithun M</h1>
-        <h3>And I'm a <span className='typed-text'></span></h3>
+      <div className='flex flex-col items-center font-extrabold space-y-3 w-full' data-aos="fade-right" >
+        <h3 className='lg:text-3xl'>Hello, It's me</h3>
+        <h1 className='text-xl lg:text-6xl bg-gradient-to-r from-indigo-500 to-cyan-500 bg-clip-text text-transparent font-extrabold'>MITHUN M</h1>
+        <h3 className='lg:text-2xl'>And I'm a <span className='typed-text text-gray-400'></span></h3>
       </div>
       
       {/* Resume Download Button */}
-      <div className="download-resume">
-        <a href="/my resume.pdf" download>
-          <button style={buttonStyle}>Download My Resume</button>
+    </main>
+          <div className="text-center pt-16" data-aos="fade-up">
+        <a href="/MITHUN_updated_resume" download>
+          <button className='px-8 py-4 bg-gray-600 rounded-2xl hover:bg-cyan-500 hover:text-black transition-all duration-500 font-medium' >Download My Resume</button>
         </a>
       </div>
-
-      <About />
-      <Skills />
-      <Project />
-      <Contact />
-    </main>
+    </>
   );
 };
 
-// Optional styling for the button
-const buttonStyle = {
-  padding: "10px 20px",
-  fontSize: "16px",
-  backgroundColor: "#4CAF50",
-  color: "white",
-  border: "none",
-  borderRadius: "5px",
-  cursor: "pointer",
-  textDecoration: "none",
-};
 
 export default Main;
